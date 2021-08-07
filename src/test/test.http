@@ -1,0 +1,30 @@
+# 회원가입
+POST http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+  "userId": "test",
+  "password": "password"
+}
+
+###
+# 비밀번호 수정
+PATCH http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+  "userId": "test",
+  "password": "password",
+  "newPassword": "password2"
+}
+
+###
+# 회원 삭제
+DELETE http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+  "userId": "test"
+}
+
+###

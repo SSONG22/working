@@ -1,0 +1,14 @@
+
+-- CREATE SCHEMA IF NOT EXISTS `test` DEFAULT CHARACTER SET utf8mb4;
+-- USE `test` ;
+--
+-- CREATE TABLE IF NOT EXISTS `user` (
+--   `id` VARCHAR(255) NOT NULL,
+--   `password` VARCHAR(255) NULL DEFAULT NULL COMMENT
+-- )
+DROP TABLE IF EXISTS USER;
+create table USER
+(
+    ID  VARCHAR(255) primary key ,
+    PASSWORD VARCHAR(255) NOT NULL
+);
